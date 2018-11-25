@@ -11,12 +11,11 @@ A script to batch clip video
 
 path = raw_input("Enter the absolute path: ")  # absolute path
 directory = os.listdir(path)  # get the video files' name
-
-# start time, whatever u want, it's the beginning of the new cliped video
-# like this:
-# original-------------------------end
-# <--clipped part-->t1-------------end
-t1 = 0.0
+print "start time, whatever u want, it's the beginning of the new cliped video\
+        like this:\
+        original-------------------------end\
+        <--clipped part-->t1-------------end"
+t1 = raw_input("Enter t1 please(float point number): ")
 
 for f in directory:
     clip_file_name = path + f  # the absolute path of the video file
